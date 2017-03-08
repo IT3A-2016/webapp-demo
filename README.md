@@ -11,3 +11,5 @@ Import `db.text`
 
 Change username and password in `dbcon.php`
 
+-----------
+This is not the ideal way of structuring a project. But this is what I see will help you the most as of what is taught to the batch from other subjects. This sample aims to use most of it with minimal introduction to new things. 
