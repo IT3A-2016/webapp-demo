@@ -1,0 +1,165 @@
+html, body{
+
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #EEE;
+    font-family: sans-serif;
+}
+
+/*------sidenav---------*/
+
+.sidenav{
+    background-color: #555;
+    z-index: 20;
+
+}
+.sidenav > a{
+    padding: 14px;
+    font-size: 25px;
+    transition: 0.3s;
+    color: #CCC;
+    text-align: center;
+}
+
+.sidenav > a:hover{
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+}
+
+
+/*------level---------*/
+
+.level{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #DDD;
+    flex-shrink: 0;
+    background-color: #EEE;
+}
+
+.level>ul{
+    overflow-y: auto;
+    max-width: 250px;
+}
+
+.level>ul>li{
+    padding: 10px 10px;
+    border-bottom: 1px solid #EEE;
+    background-color: white;
+}
+
+.level>ul>li:hover{
+    background-color: #666;
+    color: #DDD;
+    cursor: pointer;
+}
+
+.level>.header{
+    padding: 10px;
+    display: flex;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    font-size: 18px;
+    text-transform: capitalize ;
+    min-width: 150px;
+    background-color: white;
+    z-index: 1;
+}
+
+.title{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.sub-title{
+    color: #AAA;
+    font-size: 0.8em;
+}
+
+.level .title{
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.add-button{
+
+    color: #BBB;
+
+}
+
+.add-button:hover{
+    color: #777;
+}
+
+
+/*-------Book------*/
+
+#book{
+    position: relative;
+}
+
+.book-title{
+    padding: 10px 0;
+    width: 100%;
+    background-color: rgba(255,255,255,0.95);
+    box-shadow: 2px 0 3px rgba(0,0,0,0.3);
+    z-index: 1;
+    position: absolute;
+}
+
+.book-title .title, .book-title .sub-title{
+    padding: 0 20px;
+}
+
+.book-content{
+    z-index: -1;
+    padding: 20px;
+    background-color: white;
+    padding-top: 70px;
+}
+
+.content-container{
+    height: 100%;
+}
+
+
+/*-----Overrides------*/
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/*-------flex-------*/
+
+.scroll{
+    overflow-y: auto;
+}
+
+.layout-row{
+    display: flex;
+}
+
+.layout-column{
+    display: flex;
+    flex-direction: column;
+}
+
+
+[flex]{
+    flex-grow: 1;
+}
+
+/*-------*/
+
+#shelves{
+    z-index: 10;
+}
+
+.animated{
+    animation-duration: 0.2s;
+}
